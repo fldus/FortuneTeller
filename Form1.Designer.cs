@@ -31,19 +31,21 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbBirthday = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbBirthhour = new System.Windows.Forms.TextBox();
+            this.btnResult = new System.Windows.Forms.Button();
+            this.tbResult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.btnResult);
+            this.groupBox1.Controls.Add(this.tbBirthhour);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbBirthday);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -55,6 +57,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tbResult);
             this.groupBox2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.Location = new System.Drawing.Point(400, 12);
             this.groupBox2.Name = "groupBox2";
@@ -73,12 +76,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "생년월일(예:20070331)";
             // 
-            // textBox1
+            // tbBirthday
             // 
-            this.textBox1.Location = new System.Drawing.Point(59, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 22);
-            this.textBox1.TabIndex = 1;
+            this.tbBirthday.Location = new System.Drawing.Point(59, 104);
+            this.tbBirthday.Name = "tbBirthday";
+            this.tbBirthday.Size = new System.Drawing.Size(151, 22);
+            this.tbBirthday.TabIndex = 1;
             // 
             // label2
             // 
@@ -90,21 +93,29 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "태어난 시각(예:03시 15분 -> 13)";
             // 
-            // textBox2
+            // tbBirthhour
             // 
-            this.textBox2.Location = new System.Drawing.Point(59, 215);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 3;
+            this.tbBirthhour.Location = new System.Drawing.Point(59, 214);
+            this.tbBirthhour.Name = "tbBirthhour";
+            this.tbBirthhour.Size = new System.Drawing.Size(100, 22);
+            this.tbBirthhour.TabIndex = 3;
             // 
-            // button1
+            // btnResult
             // 
-            this.button1.Location = new System.Drawing.Point(59, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(258, 54);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "사주팔자 보기";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnResult.Location = new System.Drawing.Point(59, 305);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(258, 54);
+            this.btnResult.TabIndex = 4;
+            this.btnResult.Text = "사주팔자 보기";
+            this.btnResult.UseVisualStyleBackColor = true;
+            // 
+            // tbResult
+            // 
+            this.tbResult.Location = new System.Drawing.Point(22, 31);
+            this.tbResult.Multiline = true;
+            this.tbResult.Name = "tbResult";
+            this.tbResult.Size = new System.Drawing.Size(345, 371);
+            this.tbResult.TabIndex = 0;
             // 
             // Form1
             // 
@@ -118,6 +129,8 @@
             this.Text = "포츈텔러: 3202 김리연";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -126,11 +139,12 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbBirthhour;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbBirthday;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnResult;
+        private System.Windows.Forms.TextBox tbResult;
     }
 }
 
