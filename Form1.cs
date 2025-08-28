@@ -110,5 +110,22 @@ namespace FortuneTeller
             }
 
         }
+
+        public void LoadHistory(string history)
+        {
+            // 20001010 12|사주사주|내용내용
+            // history.Split('|') -> [0] 2001010 12 [1] 사주사주 [2] 내용내용
+            string birthday = history.Split('|')[0].Split(' ')[0];
+            string birthhour = history.Split('|')[0].Split(' ')[1];
+            tbBirthday.Text = birthday;
+            tbBirthhour.Text = birthhour;
+            
+            string saju = history.Split('|')[1];
+            string message = history.Split('|')[2];
+
+            tbResult.Text = $"{birthday} {birthhour}{Environment.NewLine}"
+                 + $"{saju}{Environment.NewLine}"
+                 + $"{message}";
+        }
     }
 }
